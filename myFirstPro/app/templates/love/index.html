@@ -19,6 +19,7 @@
 	<script type="text/javascript" src="./renxi/love.js" charset="utf-8"></script> -->
 	<!-- python3 Django 配置静态文件... -->
 	<link type="text/css" rel="stylesheet" href="{% static "love/renxi/default.css" %}">
+	<link href="{% static "img/favicon.ico" %}" rel="shortcut icon" />
 	<script type="text/javascript" src="{% static "love/renxi/jquery.min.js" %}"></script>
 	<script type="text/javascript" src="{% static "love/renxi/jscex.min.js" %}"></script>
 	<script type="text/javascript" src="{% static "love/renxi/jscex-parser.js" %}"></script>
@@ -28,7 +29,7 @@
 	<script type="text/javascript" src="{% static "love/renxi/jscex-async-powerpack.min.js" %}"></script>
 	<script type="text/javascript" src="{% static "love/renxi/functions.js" %}"></script>
 	<script type="text/javascript" src="{% static "love/renxi/love.js" %}"></script>
-	
+
 	<style type="text/css">
 		< !-- .STYLE1 {
 			color: #666666
@@ -37,7 +38,7 @@
 </head>
 
 <body>
-	<audio autoplay="autopaly"><source src="renxi.mp3" type="audio/mp3" /></audio>
+	<audio autoplay="autopaly"><source src="{% static "love/renxi.mp3" %}" type="audio/mp3" /></audio>
 	<div id="main">
 		<div id="wrap">
 			<div id="text">
